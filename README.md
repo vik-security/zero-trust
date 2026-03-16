@@ -9,9 +9,19 @@ NIST Special Publication 800-27 states:
 In simpler terms, ZT architecture treats all incoming connections, systems, users and devices as unknown and unverified by default. Only those that are explicitly validated and match system records are granted access. All others are denied. 
 
 ---
+## Key Principles
+
+- **Verification:** Authentication and authorization should be applied consitently to all requests.
+- **System monitoring:** Enable alerting to continously monitor all login attempts and access requests.  
+- **Least privilege:** Users and devices get only the access to accounts and systems they need.  
+- **Assume breach:** Treat all systems and connections as already potentially compromised.
+
+---
+  
 # Real-world application
 
-As an example, imagine you own a building with offices, storage rooms and common areas. Unlike a traditional building where an employee badge gets you through the front entrance and then lets you wander around. In ZT building, every door requires you to verify who you are and why you need access in addition to you already getting passed the initial entrance. While common areas will let users roam around, rooms with doors and locks will check your identity, role and whether you should be there, every single time.  
+Imagine a building with offices, server rooms, storage rooms, etc. In a traditional building, an employee badge may grant access to the front entrance and lets the user roam around the building. In a Zero Trust building, every door and entry point verifies user's role and whether access should be granted to that particular area.
+
 
 ---
 
